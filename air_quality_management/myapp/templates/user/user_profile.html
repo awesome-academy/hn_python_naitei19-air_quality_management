@@ -8,7 +8,7 @@
     <title>User Profile</title>
 </head>
 <body>
-    <header >
+    <header>
         <div class="d-flex justify-content-between align-items-center">
             <h1>User Profile</h1>
         </div>
@@ -33,7 +33,7 @@
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit Profile</button>
 
                         <!-- Create New Report Button -->
-                        <a href="{% report 'report_create.html' %}" class="btn btn-primary">Create New Report</a>
+                        <a href="{% url 'report_create.html' %}" class="btn btn-primary">Create New Report</a>
                     </div>
                 </div>
                 
@@ -45,7 +45,7 @@
                         <li class="list-group-item">
                             Report ID: 1
                             <div class="float-right">
-                                <a href="{% report 'view_report.html' report_id=1 %}" class="btn btn-info btn-sm">View</a>
+                                <a href="{% url 'view_report' report_id=1 %}" class="btn btn-info btn-sm">View</a>
                                 <a href="{% url 'edit_report' report_id=1 %}" class="btn btn-warning btn-sm">Edit</a>
                                 <a href="{% url 'delete_report' report_id=1 %}" class="btn btn-danger btn-sm">Delete</a>
                             </div>
