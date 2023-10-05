@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'myapp.apps.MyappConfig',
     'leaflet',
     'sweetify',
+    'myapp_tests.apps.MyappTestsConfig',
 ]
 
 MIDDLEWARE = [
